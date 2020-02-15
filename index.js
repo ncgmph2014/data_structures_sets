@@ -42,7 +42,7 @@ function mySet() {
 
   // this method will return the union of the two sets
   this.union = function(otherSet) {
-    var unionSet = new Set();
+    var unionSet = new mySet();
     var firstSet = this.values();
     var secondSet = otherSet.values();
     firstSet.forEach(function(e) {
