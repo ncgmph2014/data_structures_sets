@@ -96,4 +96,17 @@ setB.add("d");
 
 console.log(setA.subset(setB));
 //this one doesn't work but i am tired
-console.log(setA.intersection(setB).values());
+// console.log(setA.intersection(setB));
+
+var setC = new Set();
+var setD = new Set();
+setC.add("a");
+setD.add("b");
+setD.add("c");
+setD.add("a");
+setD.add("d");
+
+console.log(setD.values());
+setD.delete("a");
+console.log(setD.has("a"));
+console.log(setD.add("d"));
